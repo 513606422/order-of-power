@@ -1,0 +1,8 @@
+﻿default_auto_expand_rule = { 
+	weekly_profit > 100
+	occupancy >= 1
+	cash_reserves_ratio > 0.80
+	state.market_access >= 1
+	building_has_goods_shortage = no
+	owner.construction_queue_duration < max_autoexpand_queue_weeks
+}

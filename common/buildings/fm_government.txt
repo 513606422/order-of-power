@@ -1,0 +1,29 @@
+﻿############ GOVERNMENT BUILDINGS
+
+
+building_center_bank = {
+	building_group = bg_banking
+	texture = "gfx/interface/icons/building_icons/mint_industry.dds"
+	city_type = city
+	has_max_level = yes
+	residence_points_per_level = 0
+	can_build = {	
+		is_capital = yes
+	}
+	unlocking_technologies = { 
+		urbanization
+	}
+
+	pays_taxes = no
+	economic_contribution = 0
+	production_method_groups = {
+		pmg_center_bank_production
+		pmg_center_bank_currency
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no	
+	
+	terrain_manipulator = urban_city
+}

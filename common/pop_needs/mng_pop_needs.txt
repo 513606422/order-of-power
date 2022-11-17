@@ -1,0 +1,232 @@
+﻿# goods						The good being referenced
+# weight					The base weight that is applied to this good based on market Sell Order share
+# max_weight				The maximum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
+# min_weight				The minimum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
+
+popneed_health = {
+	default = drugs
+
+	entry = {
+		goods = drugs
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}	
+	entry = {
+		goods = medical
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.2
+	}
+	entry = {
+		goods = services
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 60% of supply share
+		min_weight = 0.1
+	}
+	entry = {
+		goods = tobacco
+		
+		weight = 0.5
+		max_weight = 2.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}	
+	entry = {
+		goods = opium
+		
+		weight = 0.5
+		max_weight = 2.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+}
+popneed_basic_drinks = {
+	default = liquor
+	
+	entry = {
+		goods = liquor
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	entry = {
+		goods = beer
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	entry = {
+		goods = tea
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = coffee
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = wine
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+}
+popneed_luxury_drinks = {
+	default = tea
+
+	entry = {
+		goods = tea
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = coffee
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = wine
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = beer
+		
+		weight = 1
+		max_weight = 3.0 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+}
+popneed_information = {
+	default = newspaper
+	
+	entry = {
+		goods = newspaper
+		
+		weight = 4
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = services
+		
+		weight = 0.25
+		max_weight = 0.4 # Maxes out at 20% of supply share
+		min_weight = 0
+	}
+				
+	entry = {
+		goods = hardback
+		
+		weight = 0.25
+		max_weight = 0.5 # Maxes out at 60% of supply share
+		min_weight = 0.0
+	}
+	entry = {
+		goods = radios
+		
+		weight = 1
+		max_weight = 1.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}	
+	entry = {
+		goods = telephones
+		
+		weight = 1
+		max_weight = 1.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+}
+popneed_luxury_items = {
+	default = luxury_clothes
+	
+	entry = {
+		goods = luxury_clothes
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = luxury_furniture
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = porcelain
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = hardback
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = radios
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+}
+
+popneed_art = {
+	default = services
+	
+	entry = {
+		goods = services
+		
+		weight = 0.05
+		max_weight = 0.4 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
+
+	entry = {
+		goods = fine_art
+		
+		weight = 1
+		max_weight = 4.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
+	
+	entry = {
+		goods = hardback
+		
+		weight = 0.25
+		max_weight = 2.0 # Maxes out at 80% of supply share
+		min_weight = 0.0
+	}
+}

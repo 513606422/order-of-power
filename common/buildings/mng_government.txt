@@ -1,0 +1,97 @@
+﻿##拓荒营地
+building_pioneer_camp = {
+	building_group = bg_pioneer_camp
+	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	can_build = {	
+		OR = {
+			any_scope_building = {
+				is_building_type = building_pioneer_camp
+				occupancy > 0.9
+				is_under_construction = no
+			}			
+			NOT = { has_building = building_pioneer_camp }
+		}
+		OR = {
+			region = sr:region_dixie
+			region = sr:region_the_midwest
+			region = sr:region_new_england
+		}
+	}
+	required_construction = construction_cost_very_low
+	unlocking_technologies = {
+		urbanization
+	}
+	construction_modifier = {
+	}
+	production_method_groups = {
+		pmg_base_subsistence_pioneer_camp
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	ai_value = 5000 
+}
+#行政机构
+building_government_administration = {
+	building_group = bg_bureaucracy
+	city_type = city
+
+	levels_per_mesh = 10
+
+	unlocking_technologies = {
+		bureaucracy
+	}
+
+	production_method_groups = {
+		pmg_base_building_government_administration
+		pmg_government_administration_bureaucrat_professionalism
+		pmg_government_administration_appointment_system
+		pmg_government_administration_religious_administration
+	}
+
+	texture = "gfx/interface/icons/building_icons/building_government_administration.dds"
+
+	required_construction = construction_cost_medium
+}
+building_hospital = {
+	building_group = bg_urban_facilities
+	city_type = city
+
+	has_max_level = yes
+								
+	unlocking_technologies = {
+		medical_degrees
+	}
+
+	production_method_groups = {
+		pmg_government_health_services_organization
+		pmg_government_health_services_system
+	}
+	is_hidden_when_unavailable = no
+	texture = "gfx/interface/icons/building_icons/building_hospital.dds"
+	ai_value = state_pollute_per_hospital
+	required_construction = construction_cost_medium
+
+}
+building_university = {
+
+	building_group = bg_technology
+
+	city_type = city
+	
+	has_max_level = yes
+	
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		academia
+	}
+
+	production_method_groups = {
+		pmg_base_building_university
+		pmg_university_academia
+	}
+
+	texture = "gfx/interface/icons/building_icons/building_university.dds"
+
+	required_construction = construction_cost_medium
+}

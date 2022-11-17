@@ -1,0 +1,33 @@
+﻿bg_banking = {
+	category = development
+	always_possible = yes
+	
+	is_government_funded = yes
+	
+	auto_place_buildings = yes	
+	
+	default_building = building_center_bank
+}
+bg_government = {
+	category = development
+
+	always_possible = yes
+	
+	is_government_funded = yes
+	
+	economy_of_scale = yes
+	
+	lens = government
+	
+	urbanization = 20
+	infrastructure_usage_per_level = 1
+}
+bg_pioneer_camp = {
+	parent_group = bg_infrastructure
+	
+	is_subsistence = yest
+	
+	is_government_funded = yes
+	can_use_slaves = yes
+	hires_unemployed_only = yes
+}

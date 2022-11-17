@@ -1,0 +1,116 @@
+﻿pm_metal_currency = {
+	texture = "gfx/interface/icons/production_method_icons/gold_mining.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+	country_modifiers = {
+		unscaled = {
+		}
+		level_scaled = {		
+			country_minting_add = 500
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_iron_add = 0.5
+			building_input_gold_add = 0.1
+		}
+		unscaled = {
+			building_employment_clerks_add = 500
+			building_employment_laborers_add = 2000					
+		}
+	}
+}
+pm_paper_currency = {
+	texture = "gfx/interface/icons/production_method_icons/paper_currency.dds"
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+	unlocking_technologies = {
+        currency_standards
+    }
+	country_modifiers = {
+		level_scaled = {		
+			country_minting_add = 500
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 0.5
+		}
+		unscaled = {
+			building_employment_clerks_add = 2500
+		}
+	}
+}
+pm_no_monetary_policy = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+	country_modifiers = {
+		workforce_scaled = {		
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+
+		}
+	}
+	ai_weight = 100
+}
+pm_expansionary_monetary_policy = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+        pm_paper_currency		
+    }
+	
+	country_modifiers = {
+		workforce_scaled = {
+			country_minting_add = 250
+		}
+	}
+	building_modifiers = {
+		unscaled = {
+			building_input_mult = 0.5
+		}
+		workforce_scaled = {
+
+		}
+	}
+	ai_weight = 0
+}
+pm_tight_monetary_policy = {
+	texture = "gfx/interface/icons/production_method_icons/elastics.dds"
+
+	unlocking_production_methods = {		# optional list of required pm's to be able to activate this pm
+        pm_paper_currency				# these must refer to pm keys on the same building
+    }
+	disallowing_laws = {
+		law_command_economy
+		law_council_republic
+	}
+	country_modifiers = {
+		unscaled = {
+			country_inflation_rate = -0.0002
+		}
+		workforce_scaled = {
+			country_minting_add = -250
+		}
+	}
+	building_modifiers = {
+		unscaled = {
+			building_input_mult = -0.5
+		}
+		workforce_scaled = {
+
+		}
+	}
+	ai_weight = 0
+}

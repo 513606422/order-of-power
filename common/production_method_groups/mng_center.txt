@@ -1,0 +1,24 @@
+﻿pmg_center_bank_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_no_monetary_policy
+		pm_expansionary_monetary_policy
+		pm_tight_monetary_policy
+	}
+}
+pmg_center_bank_currency = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_metal_currency
+		pm_paper_currency
+	}
+	ai_selection = most_productive	
+}
+pmg_urban_property = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_urban_property_house
+		pm_urban_property_skyscraper
+	}
+	ai_selection = most_productive	
+}

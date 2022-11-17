@@ -1,0 +1,61 @@
+﻿# This is executed last among all history
+GLOBAL = {
+	cu:south_german = {
+		add_cultural_obsession = beer
+	}
+	cu:french = {
+		add_cultural_obsession = newspaper
+	}
+	every_country = {
+		if = {
+			limit = {
+				has_technology_researched = mass_communication
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_building_type = building_urban_center
+						level >= 7 
+					}
+				}
+				create_building={
+					building="building_printing_works"
+					level=1
+					reserves=1
+				}
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_building_type = building_urban_center
+						level >= 10 #London will get it at game start 10 , but for everyone else this is quite hard
+					}
+				}
+				create_building={
+					building="building_printing_works"
+					level=2
+					reserves=1
+				}
+			}
+		}
+	}
+	every_country = {
+		if = {
+			limit = {
+				country_has_primary_culture = cu:south_german
+			}
+			every_scope_state = {
+				limit = {
+					any_scope_building = {
+						is_building_type = building_food_industry 
+					}
+				}
+				create_building={
+					building="building_brewery"
+					level=1
+					reserves=1
+				}
+			}
+		}
+	}
+}

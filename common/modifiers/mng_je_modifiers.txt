@@ -1,0 +1,46 @@
+﻿westernization_movement_complete = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_weekly_innovation_add = 20
+	country_authority_mult = 0.2
+}
+modernization_movement_complete = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_tech_spread_add = 50
+	country_society_weekly_innovation_mult = 0.2
+}
+revolution_heritage_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	state_accepted_birth_rate_mult = -0.1
+	state_education_access_add = 0.1
+}
+free_realms_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	state_education_access_add = 0.1
+	state_poor_expected_sol = 1
+	state_middle_expected_sol = 2
+	state_rich_expected_sol = 3
+}
+##通货膨胀
+national_inflation_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/national_inflation_modifers.dds
+	country_government_wages_mult = 1
+	country_military_wages_mult = 1
+	state_tax_collection_mult = 1
+	state_tax_waste_add = 1
+}
+geneva_conventions_member_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	unit_kill_rate_add = -0.2
+	country_prestige_mult = 0.1
+	country_war_exhaustion_casualties_mult = -0.1
+}
+diplomatic_play_world_war_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_infamy_generation_mult = -0.005
+	country_max_declared_interests_mult = 0.005
+}
+diplomatic_explosive_point_modifers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_diplomatic_play_maneuvers_add = 100
+	country_allow_multiple_alliances = yes
+}

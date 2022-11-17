@@ -1,0 +1,14 @@
+﻿#货币
+# Scales with country GDP / COUNTRY_GDP_MODIFIER_DIVISOR
+country_gdp = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_minting_add = 0.5
+}
+economy_of_scale = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_throughput_mult = 0.02
+}
+country_center_bank_level_modifers = {	
+	icon = gfx/interface/icons/sol_icons/affluent.dds
+	state_building_center_bank_max_level_add = 1
+}

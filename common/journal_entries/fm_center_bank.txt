@@ -1,0 +1,133 @@
+﻿# je_country_center_bank = {
+	# icon = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	# is_shown_when_inactive = {
+		# has_technology_researched = urbanization
+	# }
+	# immediate = {
+		# if = {
+			# limit = {
+				# has_technology_researched = urbanization
+			# }
+			# hidden_effect = {
+				# every_scope_state = {
+					# limit = {
+						# has_modifier = country_center_bank_level_modifers
+					# }
+					# remove_modifier = country_center_bank_level_modifers
+				# }
+			# }
+			# capital = {
+				# add_modifier = {
+					# name = country_center_bank_level_modifers
+					# multiplier = country_center_bank_level
+				# }		
+			# }
+		# }
+	# }
+
+	# possible = {
+		# has_technology_researched = urbanization
+	# }
+
+	# complete = {
+		# custom_tooltip = {
+			# text = je_country_inflation_effect
+			# always = no
+		# }
+	# }
+
+	# on_complete = {
+
+	# }
+	# status_desc = {
+		# first_valid = {
+			# triggered_desc = {
+				# desc = je_national_inflation_low
+				# trigger = {
+					# NOT = { has_variable = national_inflation }
+				# }
+			# }
+			# triggered_desc = {
+				# desc = je_national_inflation_low
+				# trigger = {
+					# has_variable = national_inflation
+					# var:national_inflation < 0.01
+				# }
+			# }
+			# triggered_desc = {
+				# desc = je_national_inflation_normal
+				# trigger = {
+					# has_variable = national_inflation
+					# var:national_inflation >= 0.01
+					# var:national_inflation < 0.05
+				# }
+			# }
+			# triggered_desc = {
+				# desc = je_national_inflation_hight
+				# trigger = {
+					# has_variable = national_inflation
+					# var:national_inflation >= 0.05
+					# var:national_inflation < 0.1
+				# }
+			# }
+		# }
+	# }
+	# invalid = {
+
+	# }
+	# current_value = {
+		# value = country_inflation_level
+	# }
+
+	# goal_add_value = {
+		# value = 1000
+	# }
+	# on_monthly_pulse = {
+		# effect = {
+			# if = {
+				# limit = { has_variable = national_inflation }
+				# change_variable = { 
+					# name = national_inflation 
+					# add = country_inflation_level
+				# }
+			# }
+			# else = {
+				# set_variable = { name = national_inflation		 		
+					# value = country_inflation_level
+				# }
+			# }
+			# clamp_variable = { name = national_inflation max = 100 min = 0 }
+			# if = {
+				# limit = {
+					# has_technology_researched = central_banking
+				# }
+				# every_scope_state = {
+					# limit = {
+						# has_modifier = country_center_bank_level_modifers
+					# }
+					# remove_modifier = country_center_bank_level_modifers
+				# }
+				# capital = {
+					# add_modifier = {
+						# name = country_center_bank_level_modifers
+						# multiplier = country_center_bank_level
+					# }		
+				# }
+			# }
+			# if = {
+				# limit = {
+					# var:national_inflation >=0.01
+				# }
+				# remove_modifier = national_inflation_modifers
+				# add_modifier = {
+					# name = national_inflation_modifers
+					# multiplier = var:national_inflation
+				# }
+			# }			
+		# }
+	# }
+
+	# weight = 100
+	# should_be_pinned_by_default = yes
+# }

@@ -1,0 +1,143 @@
+﻿#合成油厂
+pmg_synthetic_petroleum = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_fischer_tropsch_process
+	}
+}
+#木材加工
+pmg_lumber_equipment = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_lumber_saw_mills
+		pm_lumber_steam_donkey_building_logging_camp
+		pm_lumber_electric_saw_mills
+	}
+}
+#酿酒厂
+#
+pmg_brewery_stills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_brewery_pot_stills
+		pm_brewery_patent_stills
+	}
+}
+pmg_building_brewery_brewing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_traditional_brewing
+		pm_yeast_brewing
+		pm_enzymatic_brewing
+	}
+}
+pmg_liquors_type = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_liquors_balanced
+		pm_liquor_production
+		pm_beer_production
+		pm_wine_production
+	}
+	ai_selection = most_profitable
+}
+#印刷机
+pmg_printing_press = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_gravure_printing_press
+		pm_rotary_printing_press
+	}
+}
+#报纸和书
+pmg_printing_literature = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_priority_newspapers
+		pm_priority_hardcover
+	}
+}
+#废纸回收
+pmg_paper_recycling = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_paper_recycling
+		pm_paper_recycling
+	}
+}
+#制药
+pmg_pharmacy_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_pharmacy_natural_herbs
+		pm_pharmacy_chemical_refining
+		pm_pharmacy_penicillin_extraction
+	}
+}
+#奢侈家具
+pmg_building_luxury_furniture_manufacturies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_luxury_handcrafted_furniture
+		pm_luxury_lathe
+		pm_luxury_mechanized_workshops
+	}
+}
+#奢侈服装
+pmg_base_building_luxury_textile_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_luxury_handsewn_clothes
+		pm_luxury_dye_workshops
+		pm_luxury_sewing_machines
+		pm_luxury_electric_sewing_machines
+	}
+}
+#炸药厂生产
+pmg_explosive_plants_group = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pmg_explosive_plants
+	}
+}
+pmg_explosives_building_explosive_plants = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_explosives_leblanc_process
+		pm_explosives_ammonia-soda_process
+		pm_explosives_vacuum_evaporation
+		pm_explosives_brine_electrolysis
+	}
+}
+#所有制
+pmg_ownership_capital_building_explosive_plants = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_industry
+		pm_publicly_traded_building_explosive_plants
+		pm_government_run_industry
+		pm_worker_cooperative_industry
+	}
+}
+#奢侈家具所有制
+pmg_ownership_capital_building_luxury_furniture_manufacturies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_building_luxury_furniture_manufacturies
+		pm_privately_owned_building_luxury_furniture_manufacturies
+		pm_publicly_traded_building_luxury_furniture_manufacturies
+		pm_government_run_building_luxury_furniture_manufacturies
+		pm_worker_cooperative_building_luxury_furniture_manufacturies
+	}
+}
+#奢侈服装所有制
+pmg_ownership_capital_building_luxury_textile_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_building_luxury_textile_mills
+		pm_privately_owned_building_luxury_textile_mills
+		pm_publicly_traded_building_luxury_textile_mills
+		pm_government_run_building_luxury_textile_mills
+		pm_worker_cooperative_building_luxury_textile_mills
+	}
+}

@@ -1,0 +1,62 @@
+﻿drugs = {
+	texture = "gfx/interface/icons/goods_icons/pharmaceuticals.dds"
+	cost = 60
+	category = staple
+	obsession_chance = 2.0
+	prestige_factor = 4
+	
+	convoy_cost_multiplier = 0.75
+}
+# element = {
+	# texture = "gfx/interface/icons/goods_icons/element.dds"
+	# cost = 20
+	# category = industrial
+	# prestige_factor = 4
+# }
+beer = {
+	texture = "gfx/interface/icons/goods_icons/beer.dds"
+	cost = 30
+	category = luxury
+	
+	obsession_chance = 2.0
+	prestige_factor = 4
+	
+	traded_quantity = 15
+	convoy_cost_multiplier = 0.75
+}
+medical = {
+	texture = "gfx/interface/icons/goods_icons/medical.dds"
+	cost = -80
+	category = staple
+	tradeable = no
+	fixed_price = yes
+	prestige_factor = 5
+}
+heavy_arms = {
+	texture = "gfx/interface/icons/goods_icons/heavy_arms.dds"
+	cost = 80
+	category = military
+	
+	prestige_factor = 5
+	traded_quantity = 7
+	convoy_cost_multiplier = 1.5
+}
+newspaper = {
+	texture = "gfx/interface/icons/goods_icons/newspaper.dds"
+	cost = 30
+	category = staple
+	
+	prestige_factor = 4
+	obsession_chance = 1.0
+	tradeable = no
+	
+	consumption_tax_cost = 200
+}
+hardback = {
+	texture = "gfx/interface/icons/goods_icons/hardback.dds"
+	cost = 60
+	category = luxury
+	
+	obsession_chance = 1.0
+	prestige_factor = 10
+}

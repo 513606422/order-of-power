@@ -1,0 +1,175 @@
+﻿#锯木厂
+lumber_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/building_sawmill.dds"
+	
+	unlocking_technologies = {
+		steelworking
+	}
+	
+	city_type = wood
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_lumber_equipment
+		pmg_transportation_building_logging_camp
+		pmg_ownership_capital_building_oil_rig		
+	}
+
+	required_construction = construction_cost_high
+}
+#合成石油
+synthetic_petroleum_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/petroleum_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		oil_turbine
+	}
+		
+	production_method_groups = {
+		pmg_synthetic_petroleum
+		pmg_ownership_capital_building_oil_rig
+	}
+	
+	required_construction = construction_cost_high
+}
+#火炮厂
+building_artillery_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/artillery_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		gunsmithing
+	}
+
+	production_method_groups = {
+		pmg_artillery_manufacturing
+		pmg_machinegun
+		pmg_ownership_capital_building_artillery_industry
+	}
+	
+	required_construction = construction_cost_very_high
+}
+#酿酒厂
+building_brewery = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/building_brewery.dds"
+	
+	unlocking_technologies = {
+		distillation
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_building_brewery_brewing
+		pmg_liquors_type
+		pmg_brewery_stills
+		pmg_ownership_capital_building_artillery_industry
+	}
+
+	required_construction = construction_cost_medium
+}
+#印刷厂
+building_printing_works = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/printing_works.dds"
+	
+	unlocking_technologies = {
+		mass_communication
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_printing_press
+		pmg_printing_literature
+		pmg_paper_recycling
+		pmg_ownership_capital_building_artillery_industry
+	}
+
+	required_construction = construction_cost_medium
+}
+#炸药厂
+building_explosive_plants = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/explosive_plants.dds"
+	
+	unlocking_technologies = {
+		intensive_agriculture
+	}
+	
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_explosive_plants_group
+		pmg_explosives_building_explosive_plants
+		pmg_ownership_capital_building_explosive_plants
+	}
+
+	required_construction = construction_cost_high
+}
+#制药厂
+pharmaceutical_industry = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/pharmaceutical_industry.dds"
+	
+	unlocking_technologies = {
+		pharmaceuticals
+	}
+	
+	city_type = city
+
+	production_method_groups = {
+		pmg_pharmacy_production
+		pmg_ownership_capital_building_chemical_plants
+	}
+
+	required_construction = construction_cost_medium
+}
+#奢侈家具
+# building_luxury_furniture_manufacturies = {
+	# building_group = bg_light_industry
+	# texture = "gfx/interface/icons/building_icons/luxury_furniture_manufacturies.dds"
+	# city_type = city
+	# levels_per_mesh = 5
+	
+	# unlocking_technologies = {
+		# manufacturies
+	# }
+
+	# production_method_groups = {
+		# pmg_building_luxury_furniture_manufacturies
+		# pmg_automation_building_furniture_manufacturies
+		# pmg_ownership_capital_building_luxury_furniture_manufacturies
+	# }
+
+	# required_construction = construction_cost_high
+# }
+#奢侈服装
+# building_luxury_textile_mills = {
+	# building_group = bg_light_industry
+	# texture = "gfx/interface/icons/building_icons/luxury_textile_industry.dds"
+	# city_type = city
+	# levels_per_mesh = 5
+	
+	# unlocking_technologies = {
+		# manufacturies
+	# }
+
+	# production_method_groups = {
+		# pmg_base_building_luxury_textile_mills
+		# pmg_automation_building_textile_mills
+		# pmg_ownership_capital_building_luxury_textile_mills
+	# }
+	
+	# required_construction = construction_cost_high
+# }

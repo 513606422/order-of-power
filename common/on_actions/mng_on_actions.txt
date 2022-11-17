@@ -1,0 +1,44 @@
+﻿on_monthly_pulse_state = {
+	on_actions = { mng_on_monthly_pulse_state }
+}
+mng_on_monthly_pulse_state = {
+	effect = {
+		if = {
+			limit = { 
+				state_region = {
+					pollution_amount > 10
+				}
+			}
+			remove_modifier = state_pollution_mortality_1
+			add_modifier = {
+				name = state_pollution_mortality_1
+				multiplier = state_region.pollution_amount
+			}
+		}
+		if = {
+			limit = { 
+				any_scope_building = {
+					is_building_type = building_pioneer_camp
+				}
+			}
+			state_region = {
+				add_arable_land = root.state_pioneer_camp
+			}
+		}
+	}
+}
+on_yearly_pulse_state = {
+	effect = {
+		if = {
+			limit = { 
+				any_scope_building = {
+					is_building_type = building_pioneer_camp
+				}
+			}
+			state_region = {
+				add_arable_land = root.state_pioneer_camp
+			}
+		}
+	}
+}
+# Root = Building

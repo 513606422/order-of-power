@@ -1,0 +1,111 @@
+﻿##传统医学
+pm_traditional_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/apothecaries.dds"
+	
+	low_pop_method = yes # AI will activate this method for states with low population
+	
+	building_modifiers = {
+		workforce_scaled = {		
+			building_input_services_add = 5 #x30 = 150
+			building_output_medical_add = 10 #x80 = 800
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_wealth_mult = -0.001			
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+		}
+	}	
+	
+}
+##实验医学
+pm_experimental_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/first_aid.dds"
+	unlocking_technologies = {
+		pharmaceuticals
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_medical_add = 25 #x80 = 1600
+			building_input_liquor_add = 10 #x30 = 300
+			building_input_drugs_add = 10 #x60 = 600
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_wealth_mult = -0.002			
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+		}
+	}
+}
+##临床医学
+pm_clinical_medicine = {
+	texture = "gfx/interface/icons/production_method_icons/unused/pharmacies.dds"
+	unlocking_technologies = {
+		modern_nursing
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_output_medical_add = 40 #x80 = 2800
+			building_input_services_add = 10 #x30 = 300
+			building_input_liquor_add = 10 #x30 = 300
+			building_input_drugs_add = 20 #x60 = 1200
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_wealth_mult = -0.003			
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+		}
+	}	
+}
+pm_hospital_public = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			
+		}
+		level_scaled = {
+			building_employment_clerks_add = 1000
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_mult = -0.01
+		}
+	}		
+}
+pm_hospital_private = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_aristocrats.dds"
+	
+	low_pop_method = yes
+	
+	building_modifiers = {
+		workforce_scaled = {
+			
+		}
+		level_scaled = {
+			building_employment_clerks_add = 800
+			building_employment_shopkeepers_add = 100
+			building_employment_capitalists_add = 50
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_mortality_wealth_mult = -0.002			
+		}
+	}	
+
+}
